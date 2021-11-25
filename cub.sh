@@ -1,0 +1,1 @@
+python train.py -project base -dataset cub200 -base_mode 'ft_cos' -new_mode 'ft_cos' -gamma 0.1 -lr_base 0.1 -lr_new 0.01 -decay 0.0005 -epochs_base 100 -schedule Milestone -milestones 30 40 60 80 -gpu '0,1,2,3' -temperature 16 -basetrain False 
